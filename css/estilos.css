@@ -1,0 +1,306 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y border no afecten el tamaño total del elemento */
+    font-family: 'Courier New', monospace; /* Fuente general para todo el sitio */
+}
+body {
+    background-color: #0A0A0A; /* Fondo oscuro de la página */
+    color: #E0E0E0; /* Color de texto claro para contraste */
+    line-height: 1.6; /* Espaciado de líneas */
+    padding: 20px; /* Padding general alrededor del contenido */
+}
+
+/* Botón de modo de alternancia */
+.btn-toggle {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #FF0000; /* Color de fondo rojo */
+    color: #FFF; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar por el botón */
+}
+
+/* Imagen de cabecera del perfil */
+.perfil-header-img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+    max-width: 600px; /* Tamaño máximo para controlar la escala en pantallas grandes */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    display: block;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Encabezado de la página */
+.header {
+    background: linear-gradient(45deg, #0A0A0A, #4B0000); /* Degradado oscuro a rojo */
+    color: #FFF; /* Texto blanco */
+    padding: 1.5rem 0; /* Espaciado superior e inferior */
+    text-align: center;
+    text-transform: uppercase; /* Texto en mayúsculas */
+    border-bottom: 3px solid #8B0000; /* Línea inferior roja oscura */
+    font-family: 'Old English Text MT', serif; /* Fuente gótica */
+}
+
+.header h1 {
+    font-size: 3rem; /* Tamaño grande para el título */
+    font-weight: bold;
+    text-shadow: 2px 2px #8B0000; /* Sombra de texto roja */
+}
+
+.header p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #CCCCCC; /* Gris claro */
+    text-shadow: 1px 1px #660000; /* Sombra de texto suave */
+}
+
+/* Sección de Perfil */
+.perfil {
+    background-color: #141414; /* Fondo gris oscuro */
+    margin: 2rem 0; /* Espaciado superior e inferior */
+    padding: 2rem;
+    border-radius: 12px; /* Bordes redondeados */
+    border: 2px solid #FF0000; /* Borde rojo */
+}
+
+.perfil-header h2 {
+    font-size: 2.5rem;
+    color: #FF0000; /* Color rojo para el nombre */
+    text-transform: uppercase;
+}
+
+.perfil-header .descripcion {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #bbb; /* Gris claro */
+    margin-top: 0.5rem;
+}
+
+/* Contenedor de imagen de perfil */
+.foto-container {
+    display: flex;
+    justify-content: center; /* Centra la imagen */
+    margin: 1.5rem 0;
+}
+
+.foto-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Hace la imagen redonda */
+    border: 3px solid #FF0000; /* Borde rojo */
+}
+
+/* Información del perfil */
+.perfil-info {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #ddd; /* Texto gris claro */
+}
+
+/* Proyectos */
+.proyectos {
+    background-color: #2A2A2D; /* Fondo gris oscuro */
+    padding: 1.5rem;
+    border-radius: 8px; /* Bordes redondeados */
+    margin-bottom: 2rem;
+    border: 1px solid #8B0000; /* Borde rojo oscuro */
+}
+
+.proyectos h3 {
+    font-size: 1.8rem;
+    color: #FF0000; /* Color rojo para el título de proyectos */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.proyectos ul {
+    list-style-type: none; /* Quita los puntos de lista */
+}
+
+.proyectos li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.proyectos a {
+    color: #FF1493; /* Color rosado para enlaces */
+    text-decoration: none;
+}
+
+.proyectos a:hover {
+    color: #FF66B3; /* Color rosado claro al pasar por encima */
+    text-decoration: underline;
+}
+
+/* Habilidades */
+#habilidades {
+    background-color: #1b1b1b;
+    padding: 50px 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff; /* Texto blanco */
+}
+
+#habilidades h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+/* Lista de habilidades */
+.habilidades-lista {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las habilidades ocupen varias filas */
+    justify-content: space-around; /* Espaciado alrededor */
+    gap: 20px;
+}
+
+.habilidad-item {
+    background-color: #2c2c2c;
+    border: 1px solid #3e3e3e;
+    border-radius: 10px; /* Bordes redondeados */
+    width: 45%; /* Cada habilidad ocupa el 45% del ancho */
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s ease-in-out; /* Efecto de animación */
+}
+
+.habilidad-item:hover {
+    transform: translateY(-10px); /* Sube al pasar el ratón */
+}
+
+.habilidad-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: red; /* Color rojo */
+}
+
+.habilidad-item .descripcion {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #b0b0b0; /* Gris claro */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .habilidad-item {
+        width: 100%; /* Cada habilidad ocupa el 100% del ancho */
+    }
+}
+
+/* Sección de contacto */
+#contacto {
+    background-color: #111;
+    padding: 50px 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+#contacto h2 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #ff4d4d; /* Rojo brillante */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 4px 10px rgba(255, 77, 77, 0.5); /* Efecto brillante */
+}
+
+/* Formulario de contacto */
+form {
+    background-color: #222; /* Fondo oscuro */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.7); /* Sombra */
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Elementos en columna */
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column; /* Elementos en columna */
+    gap: 10px;
+}
+
+.campo label {
+    font-size: 1.2em;
+    color: red; /* Rojo para las etiquetas */
+}
+
+.campo input, .campo textarea {
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 8px;
+    border: 2px solid #555;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.campo input:focus, .campo textarea:focus {
+    border-color: #ff4d4d; /* Rojo al enfocar */
+}
+
+.campo textarea {
+    height: 150px;
+    resize: none; /* Sin opción de cambiar tamaño */
+}
+
+/* Botón de envío */
+.btn-submit {
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #f2b700; /* Amarillo al pasar el ratón */
+    transform: translateY(-5px); /* Sube un poco */
+}
+
+.btn-submit:active {
+    background-color: #e63946; /* Rojo más oscuro al hacer clic */
+}
+
+@media (max-width: 768px) {
+    #contacto h2 {
+        font-size: 2.5em;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+/* Estilos del Footer */
+.footer {
+    background-color: #0D0D0D; /* Fondo oscuro */
+    color: #FFFFFF; /* Texto blanco */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Tipografía moderna */
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-weight: bold;
+    opacity: 0.8; /* Ligera transparencia */
+}
+
